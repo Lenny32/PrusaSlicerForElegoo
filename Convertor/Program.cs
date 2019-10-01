@@ -15,7 +15,7 @@ namespace Convertor
 {
     class Program
     {
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
             const string filename = "20x20x20.sl1";
             FileInfo file = new FileInfo(filename);
@@ -60,8 +60,6 @@ namespace Convertor
             var fileName = file.Name + ".zip";
 
             File.WriteAllBytes(fileName, data);
-
-            return 0;
         }
 
 
